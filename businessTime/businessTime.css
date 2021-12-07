@@ -1,0 +1,19 @@
+h1{
+    color: #540b0e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-family:monospace;
+}
+
+body{
+    background-color: #fff3b0;
+}
+
+.flexbox{
+    display: flex;
+    border: black solid 1px;
+}
