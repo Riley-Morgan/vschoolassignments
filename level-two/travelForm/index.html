@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="travel.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Travel Form</h1> 
+ 
+    <form name="travelForm">
+        First Name: <input type="text" name="firstName"/>
+        Last Name: <input type="text" name="lastName"/>
+
+        Age: <input type="number" name="age"/>
+
+        Male: <input type="radio" name="gender" value="Male"/>
+        Female: <input type="radio" name="gender" value="Female"/>
+        Other: <input type="radio" name="gender" value="Other"/>
+
+        <select name="city">
+            <option value="Denver">Denver</option>
+            <option value="Omaha">Omaha</option>
+            <option value="Reno">Reno</option>
+        </select>
+        
+        Dietary restrictions, Select all that apply:
+        Vegetarian: <input type="checkbox" value="Vegetarian" name="diet"/>
+        Kosher: <input type="checkbox" value="Kosher" name="diet"/>
+        Gluten free: <input type="checkbox" value="Gluten free" name="diet"/>
+        Lactose free: <input type="checkbox" value="Lactose free" name="diet"/>
+
+        <button>Submit</button>
+    </form>
+<script src="travel.js"></script>
+</body>
+</html>

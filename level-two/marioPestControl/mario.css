@@ -1,0 +1,23 @@
+h1{
+    font-family: 'New Super Mario Font U', sans-serif;
+    text-align: center;
+    flex-wrap: initial;
+    letter-spacing: 2px;
+    background-color: crimson;
+}
+
+body{
+    font-family: 'New Super Mario Font U', sans-serif;
+}
+
+#bombly{
+    width: 17%;
+}
+
+footer{
+    background-color: crimson;
+}
+
+.enemyType{
+    display: inline-flex;
+}

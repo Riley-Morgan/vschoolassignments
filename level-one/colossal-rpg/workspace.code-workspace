@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../jsExercises/nodeCalculator"
+		},
+		{
+			"path": "../jsExercises/escapeRoom"
+		}
+	],
+	"settings": {}
+}

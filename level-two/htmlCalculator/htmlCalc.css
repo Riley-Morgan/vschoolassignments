@@ -1,0 +1,18 @@
+html, body{
+    background-color: lemonchiffon;
+    text-align: center;
+}
+
+div{
+    padding-bottom: 10px;
+    margin: 5px;
+    color: darkslateblue;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+}
+
+h2{
+    color: darkslateblue;
+}

@@ -1,0 +1,10 @@
+function getNumberOfVowels(str){
+    for(let i = 0; i < str.length; i ++){
+        if(i == a || e || i || o || u){
+            console.log(i);
+        }
+    }
+}
+
+
+console.log(getNumberOfVowels("hello world"));
