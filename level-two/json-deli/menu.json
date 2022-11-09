@@ -1,0 +1,83 @@
+{
+    "menu": [
+        {
+            "appetizers": [
+                {
+                    "name": "ceasar salad",
+                    "ingredients": ["romaine lettuce", "ceasar dressing", "sliced grilled chicken"],
+                    "description": "ceasar salad with grilled chicken"
+                },
+
+                {
+                    "name": "charchuterie meal",
+                    "ingredients": ["crackers", "cheddar cheese cubes", "grapes"],
+                    "description": "an assortment of crackers, cheese, and grapes"
+                }
+            ]
+        },
+
+        {
+            "cold sandwiches": [
+                {
+                    "name": "BLT",
+                    "ingredients": ["bacon", "lettuce", "tomato"],
+                    "description": "classic BLT"
+                },
+
+                {
+                    "name": "turkey club",
+                    "ingredients": ["turkey", "swiss cheese", "lettuce", "mayo", "tomato"],
+                    "description": "classic turkey club"
+                }
+            ]
+        },
+
+        {
+            "hot sandwiches": [
+                {
+                    "name": "tuna melt",
+                    "ingredients": ["tuna", "pickles", "mayo"],
+                    "description": "hot tuna sandwitch with pickles"
+                },
+
+                {
+                    "name": "grilled cheese",
+                    "ingredients": ["american cheese", "gouda cheese", "monzarella cheese"],
+                    "description": "a blend of cheeses"
+                }
+            ]
+        },
+
+        {
+            "desserts": [
+                {
+                    "name": "cookie cake",
+                    "ingredients": ["giant chocolate chip cookie", "vanilla ice cream", "caramel drizzle"],
+                    "description": "shareable warm cookie to share with friends"
+                },
+
+                {
+                    "name": "cheesecake",
+                    "ingredients": ["slice of cheesecake", "sliced strawberries", "whipped cream"],
+                    "description": "a slice of creamy cheesecake with fresh strawberries"
+                }
+            ]
+        },
+
+        {
+            "drinks": [
+                {
+                    "name": "tropical smoothie",
+                    "ingredients": ["pineapple", "mango", "banana"],
+                    "description": "full of tangy, tropical flavors"
+                },
+
+                {
+                    "name": "berry smoothie",
+                    "ingredients": ["strawberry", "blueberry", "raspberry"],
+                    "description": "sweet blend of your berry favorites"
+                }
+            ]
+        }
+    ]
+}

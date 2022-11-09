@@ -1,0 +1,41 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: black solid 5px;
+    margin: 5%;
+}
+
+#squarea:hover{
+    background-color: pink
+}
+
+#squareb:hover{
+    border-radius: 50%;
+}
+
+#squarec:hover{
+    width: 200px;
+    height: 200px;
+}
+
+#squared:hover{
+    border: rebeccapurple dashed 2px;
+}
+
+#squaree:hover{
+    opacity: 50%;
+}
+
+#squaref:hover{
+    background-color: blueviolet;
+    border-radius: 25s%;
+    border: red solid 10px;
+}

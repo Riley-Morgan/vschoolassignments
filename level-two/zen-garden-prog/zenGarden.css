@@ -1,0 +1,277 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+@import url(http://www.csszengarden.com/214/huntington.jpg);
+@import url(http://www.csszengarden.com/214/bamboo.png);
+@import url(http://www.csszengarden.com/214/contours-opaque.png);
+@import url(http://www.csszengarden.com/214/contours.png);
+@import url(http://www.csszengarden.com/214/enso.svg);
+@import url(http://www.csszengarden.com/214/gridlines-opaque.png);
+@import url(http://www.csszengarden.com/214/gridlines.png);
+@import url(http://www.csszengarden.com/214/koi.jpg);
+@import url(http://www.csszengarden.com/214/noise.png);
+
+
+body{
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: normal;
+    font-size: 80%;
+}
+
+h1, h2{
+    font-family: 'Julius Sans One', sans-serif;
+    opacity: 80%;
+}
+
+#subhead{
+    font-style: italic;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: medium;
+    opacity: 50%;
+}
+
+
+#item6{
+    opacity: 90%;
+    text-emphasis: none;
+    color: #6d9290;
+}
+
+
+
+.grid-container{
+    display: grid;
+}
+#item1{
+    background: #2d6360 0% 0 url(http://www.csszengarden.com/214/huntington.jpg) no-repeat;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    text-align: center;
+    color: white;
+    
+}
+#item2{
+    text-align: center;
+    padding-top: 2%;
+    background-color: white;
+    opacity: 20%;
+}
+#item3{
+    background-color: white;
+    padding-inline: 10%;
+        padding-top: 3.5%;
+        line-height: 2.1;
+}
+#item4{
+    padding-inline: 10%;
+    padding-top: 3.5%;
+    line-height: 2.1;
+    background-attachment: scroll, scroll, fixed;
+    background-color: rgba(201, 232, 214, 0.895);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    padding-bottom: 3.5%;
+}
+#item5{
+    background-color: white;
+    padding-inline: 10%;
+    padding-top: 3.5%;
+    line-height: 2.1;
+    padding-bottom: 3.5%;
+}
+#item6{
+    grid-area: 6/1/7/2;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/koi.jpg);
+    background-position: 0 0, -5px -25px, 0 0, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    color: white;
+    text-align: center;
+}
+#item7{
+    background-color: white;
+    
+}
+#item8{
+    background-color: darksalmon;
+    
+}
+#item9{
+    background-color: forestgreen;
+    
+}
+#item10{
+    background-color: #134347;
+    text-align: center;
+}
+
+@media (min-width: 1121px){
+
+    .grid-container{
+        grid-template-columns: 66% 33%;
+        grid-template-rows: 300px auto auto auto 300px 150px;
+    }
+    #item1{
+        padding-top: 8%;
+        text-align: left;
+        padding-left: 30%;
+        font-size: x-large;
+        background-size: auto, auto, auto, span;
+    }
+    #item2{
+        background: #2d6360 50% 0 url(http://www.csszengarden.com/214/huntington.jpg) no-repeat;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-position: 0 0, 0 0, -5px -25px, right;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, 1300px;
+    opacity: 90%;
+    padding-top: 25%;
+    color: white;
+    }
+    #item3{
+
+    }
+    #item4{
+
+    }
+    #item5{
+
+    }
+    #item6{
+        grid-area: 5/1/6/3;
+        font-size: 220%;
+        padding-top: 7%;
+        padding-left: 13.3%;
+        padding-right: 10%;
+        line-height: 2;
+    }
+    #item7{
+        grid-area: 2/2/3/3;
+        background-color: #c0cac3;
+        opacity: 50%;
+        text-align: left;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 10%;
+        
+    }
+    #item7 p{
+        border-bottom: gray solid 1px;
+        padding-bottom: 5%;
+    }
+    #item8{
+        grid-area: 3/2/4/3;
+        background-attachment: scroll, scroll, fixed;
+        background-color: rgba(178, 215, 194, 0.895);
+        background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+        background-repeat: repeat, repeat, no-repeat;
+        background-size: auto, auto, cover;
+        text-align: left;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 20%;
+        line-height: 2.1;
+
+    }
+    #item8 h2{
+        border-top: gray solid 1px;
+    }
+    #item9{
+        grid-area: 4/2/4/3;
+        background-color: #c0cac3;
+        opacity: 50%;
+    }
+    #item10{
+        grid-area: 6/1/7/3;
+    }
+}
+
+@media (max-width: 1120px){
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-rows: 150px 75px auto auto auto 160px 110px 290px auto;
+    }
+    #item1{
+        padding-top: 6%;
+        grid-area: 1/1/3/2;
+    }
+    #item2{
+        grid-area: 2/1/3/2;
+        background-color: white;
+        opacity: 20%;
+        color: rgb(255, 255, 255, 1em);
+        text-emphasis: bold;
+        
+    }
+    #item3{
+        padding-inline: 10%;
+        padding-top: 3.5%;
+        line-height: 2.1;
+    }
+    #item4{
+        padding-inline: 10%;
+        padding-top: 3.5%;
+        line-height: 2.1;
+        background-attachment: scroll, scroll, fixed;
+        background-color: rgba(201, 232, 214, 0.895);
+        background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+        background-repeat: repeat, repeat, no-repeat;
+        background-size: auto, auto, cover;
+    }
+
+    #item5{
+        padding-inline: 10%;
+        padding-top: 3.5%;
+        line-height: 2.1;
+    }
+    #item6{
+        grid-area: 6/1/7/2;
+        background-attachment: fixed, fixed, fixed, scroll;
+        background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/koi.jpg);
+        background-position: 0 0, -5px -25px, 0 0, 0 50%;
+        background-repeat: repeat, repeat, repeat, no-repeat;
+        background-size: auto, auto, auto, cover;
+        color: white;
+        font-size: 1.5em;
+        padding-top: 6%;
+        padding-left: 12%;
+        padding-right: 12%;
+        line-height: 2;
+    }
+    #item7{
+        padding-left: 75px;
+        background-color: #e9f4ec;
+        text-align: left;
+    }
+    #item7 div{
+        display: inline-block;
+        width: 40%;
+        line-height: .75;
+        padding-right: 5%;
+        border-top: rgb(189, 189, 189) solid 1px;
+    }
+    #item8{
+        background-attachment: scroll, scroll, fixed;
+        background-color: rgba(178, 215, 194, 0.895);
+        background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+        background-repeat: repeat, repeat, no-repeat;
+        background-size: auto, auto, cover;
+        padding-left: 75px;
+        
+    }
+    #item8 div{
+        width: 40%;
+        display: inline-block;
+        border-top: rgb(189, 189, 189) solid 1px;
+    }
+    #item9{
+        
+    }
+    #item10{
+        grid-area: 7/1/8/2;
+    }
+}

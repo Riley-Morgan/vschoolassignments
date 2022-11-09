@@ -1,0 +1,24 @@
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: #f2e8cf;
+}
+
+h1{
+    text-align: center;
+    background-color: #386641;
+    color: #6a994e;
+    border-radius: 25px;
+}
+
+.todoItem{
+    border: solid #386641 5px;
+    background-color: #a7c957;
+    text-align: center;
+    padding-bottom: 5%;
+    width: 400px;
+}
+
+img{
+   width: 250px
+}
+
