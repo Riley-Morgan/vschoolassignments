@@ -1,0 +1,80 @@
+body {
+  background-color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header--box {
+  position: relative;
+  background-size: cover;
+  background-color: #6c757d;
+  background-attachment: scroll;
+  display: block;
+  background-image: url(https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg);
+  height: 515px;
+  width: auto;
+  background-blend-mode: soft-light;
+  margin-bottom: 10%;
+  
+}
+
+.nav--box {
+  color: white;
+  display: flex;
+  margin-left: 50px;
+  font-weight: bold;
+  padding-right: 50px;
+  font-weight: 600;
+}
+
+.nav--title {
+  padding-right: 300px;
+}
+
+.nav--list{
+  padding-right: 10px;
+}
+
+.header--title {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 4rem;
+  margin-bottom: 0%;
+  color: white;
+}
+
+.header--sub {
+  text-align: center;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.blog--post {
+  color: black;
+  display: flexbox;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.blog--main {
+  font-size: 2rem;
+}
+
+.blog--sub {
+  font-size: 1.7rem;
+  opacity: 65%;
+}
+
+.blog--info {
+  font-style: italic;
+  font-size: 1.3rem;
+  border-bottom: solid 1px #d8e0e8;
+  padding-bottom: 20px;
+  margin-top: 0;
+  opacity: 50%;
+}
+
+.footer--box {
+  text-align: center;
+  font-style: italic;
+  opacity: 50%;
+}

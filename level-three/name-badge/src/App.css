@@ -1,0 +1,46 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form--box {
+  border: 3px solid rgb(65, 64, 64);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 20px 20px 20px 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  height: 350px;
+  
+}
+
+.form--input {
+  padding: 1px 170px 1px 1px;
+  margin: 20px 10px 1px 30px
+  
+}
+
+.form--text {
+  margin: 30px;
+  width: 724px;
+  height: 80px;
+}
+
+.form--button {
+  margin-left: 364px;
+}
+
+.badge--head {
+  border: 1px solid rgb(65, 64, 64);
+  background-color: rgb(65, 64, 64);
+  border-radius: 5px;
+  color: white;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  font-size: 20px;
+
+}
+
+.badge--info {
+  border: 1px solid rgb(65, 64, 64);
+}
