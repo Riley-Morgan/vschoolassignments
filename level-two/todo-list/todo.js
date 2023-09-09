@@ -4,7 +4,15 @@ function getData(){
     .catch(err => console.log(err))
 }
 
+ function clearList(){
+    const list = document.getElementById("todo-list")
+    while(list.firstChild){
+        list.removeChild(list.firstChild)
+    }
+}
+
 function listData(data){
+    clearList()
     for(let i = 0; i < data.length; i++){
         let newTodo = document.createElement('ul')
         const h2 =  document.createElement('h2')
@@ -27,6 +35,7 @@ function listData(data){
 
         if(data[i].completed){
             isCompleted.setAttribute("checked", true)
+            h2.style.textDecoration = "line-through"
         }
 
         isCompleted.setAttribute("id", data[i]._id)
@@ -86,7 +95,7 @@ function listData(data){
 }
 
 
-getData()
+
 
 const makeTodo = document.todoForm
 
@@ -101,12 +110,12 @@ makeTodo.addEventListener("submit", function(event){
     }
 
     axios.post("https://api.vschool.io/rileymorgan/todo", postTodo)
-        .then(response => console.log(response.data))
+        .then(response => getData() )
         .catch(error => console.log(error))
 
-    getData()    
+       
 })
 
 
-
+getData()
 
