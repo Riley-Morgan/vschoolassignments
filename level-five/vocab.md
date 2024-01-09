@@ -54,3 +54,13 @@
 
 # Request body (req.body)
     -
+
+# UUID
+    - creates unique ID
+    - npm install uuid
+
+# Express Router
+    -enables to modularize our routes in express
+
+# Modular file organization
+    - 
