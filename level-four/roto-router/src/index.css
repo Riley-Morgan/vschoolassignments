@@ -1,0 +1,23 @@
+body {
+  font-family: monospace;
+}
+
+nav {
+  background-color: rgb(170, 125, 211);
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 10px;
+  padding-top: 1.5rem;
+  
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgb(170, 125, 211);
+  padding-left: 20px;
+  padding-top: 1.5rem;
+}

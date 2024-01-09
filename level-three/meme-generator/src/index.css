@@ -102,3 +102,56 @@ main {
 .top {
   top: 0;
 }
+
+.save--meme {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #3a1383 1.18%, #6c38b1 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  gap: 17px;
+  margin-top: 17px;
+  height: 40px;
+  width: 887px;
+}
+
+.list--area {
+  margin-left: 40px
+}
+
+.list--meme {
+  position: relative;
+}
+
+.list--edit {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #3a1383 1.18%, #6c38b1 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  gap: 17px;
+  margin-top: 10px;
+  margin-bottom: 17px;
+  margin-right: 10px;
+  height: 30px;
+  width: 100px;
+}
+
+.list--delete {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #3a1383 1.18%, #6c38b1 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  gap: 17px;
+  margin-top: 10px;
+  margin-bottom: 17px;
+  height: 30px;
+  width: 100px;
+}

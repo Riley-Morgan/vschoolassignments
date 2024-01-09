@@ -1,6 +1,9 @@
 import React from 'react'
 
-export default function Meme() {
+export default function Meme(props) {
+
+    const { handleSubmit } = props
+
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText: "",
@@ -33,9 +36,14 @@ export default function Meme() {
         }))
     }
 
+    function submit(event) {
+        event.preventDefault()
+        handleSubmit(meme)
+    }
+
     return (
         <main>
-            <div className="form">
+            <div className="form" >
                 <input 
                     type="text"
                     className="form--input"
@@ -66,6 +74,7 @@ export default function Meme() {
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
+            <button className='save--meme' onClick={submit}>Save meme 🖼</button>
         </main>
     )
 

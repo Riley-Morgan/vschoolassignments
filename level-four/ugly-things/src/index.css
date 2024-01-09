@@ -1,0 +1,22 @@
+.ugly--item {
+    font-family: 'Special Elite', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.ugly--form {
+    background-color: rgb(93, 115, 190);
+    height: 60px;
+    align-items: center;
+    padding: 20px;
+    display: grid;
+    grid-template: 20px/ 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.ugly--list {
+    display: flex;
+    flex: ;
+}
