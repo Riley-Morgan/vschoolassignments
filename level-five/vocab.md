@@ -1,6 +1,7 @@
 # Vocab
 
   # Route
+
     ~ An event listener for http requests
 
   # Endpoint
@@ -64,3 +65,20 @@
 
 # Modular file organization
     - 
+
+# URL Parameters (parameter is a placeholder for data the FE can send to the BE)
+
+  # Parts of a URL
+  * Base - http:// amazon.com
+  * Endpoint - http://amazon.com/images
+  * Parameter - http://amazon.com/images/6835f35
+  * Query - 
+
+  # Parameters (req.params)
+
+# URL Queries
+
+  # Query string - (typically to filer results)
+  * Begins with the "?"
+  * Built of key=value pairs
+  * Multiple queries separated by the "&"
