@@ -93,3 +93,13 @@
   # the "next" function
   * go look for the next piece of middleware to run
   * Movies on the the next middleware in line on our server
+
+# Console Errors in Express
+
+  # Use a logger
+  * npm install morgan
+
+# Connecting the Frond-end to the Back-end
+
+  # Folder Structure
+  # Proxy
