@@ -40,15 +40,41 @@ const bounties = [
     }
 ]
 
+// Get All
 bountyRouter.get("/", (req, res) => {
     res.send(bounties)
 })
 
+// Get One
+bountyRouter.get("/:bountyId", (req, res) => {
+    const bountyId = req.params.bountyId
+    const foundBounty = bounties.find(bounty => bounty._id === bountyId)
+    res.send(foundBounty)
+})
+
+// Post One
 bountyRouter.post("/", (req, res) => {
     const newBounty = req.body
     newBounty._id = uuidv4()
     bounties.push(newBounty)
     res.send(`Successfully added the bounty for ${newBounty.firstname} ${newBounty.lastname}.`)
+})
+
+// Delete One
+bountyRouter.delete("/:bountyId", (req, res) => {
+    const bountyId = req.params.bountyId
+    const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyId)
+    bounties.splice(bountyIndex, 1)
+    res.send("Successfully deleted bounty.")
+})
+
+// Update One
+bountyRouter.put("/:bountyId", (req, res) => {
+    const bountyId = req.params.bountyId
+    const updateBounty = req.body
+    const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyId)
+    const updatedEntry = Object.assign(bounties[bountyIndex], updateBounty)
+    res.send(updatedEntry)
 })
 
 module.exports = bountyRouter
