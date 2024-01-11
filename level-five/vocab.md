@@ -82,3 +82,14 @@
   * Begins with the "?"
   * Built of key=value pairs
   * Multiple queries separated by the "&"
+
+# Middleware
+
+  # what is it?
+  * app.use() <- leave () empty to fire on every request
+    1. (optional) - Mount Path ( endpoint )
+    2. Callback function - recieves the request, response objects, also the 'next' function
+
+  # the "next" function
+  * go look for the next piece of middleware to run
+  * Movies on the the next middleware in line on our server
