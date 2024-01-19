@@ -8,9 +8,9 @@ app.use(morgan("dev")) // Logs requests to the console
 
 // Routes // 
 
-app.use("/movies", require("./routes/movieRouter.js"))
+app.use("/api/movies", require("./routes/movieRouter.js"))
 
-app.use("/tvshows", require("./routes/tvshowRouter.js"))
+app.use("/api/tvshows", require("./routes/tvshowRouter.js"))
 
 app.listen(9000, () => {
     console.log("The server is running on Port 9000")
