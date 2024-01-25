@@ -8,7 +8,7 @@ app.use(morgan("dev")) // Logs requests to the console
 
 
 // Routes //
-app.use("/bounties", require("./routes/bountyRouter.js"))
+app.use("/api/bounties", require("./routes/bountyRouter.js"))
 
 app.listen(8000, () => {
     console.log("The server is running on Port 8000")

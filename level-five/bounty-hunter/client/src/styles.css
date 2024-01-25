@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    color: #a69797;
+}
+
+body {
+    background-color: #181717;
+}
+
+h1 {
+    margin: 5px;
+}
+
+h4 {
+    margin: 5px;
+}
+
+form {
+    border: 3px solid #050d9e;
+    padding: 20px;
+    margin: 25px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #a69797;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #050d9e;
+}
+
+.delete-btn {
+    background-color: #333;
+    color: rgba(225, 6, 6, 0.568);
+    margin: 10px;
+}
+
+.edit-btn {
+    background-color: #333;
+    color: #050d9e;
+    margin: 10px;
+}
+
+.bounty-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+}
+
+.bounty {
+    border: 1px solid #a69797;
+    padding: 10px;
+    margin: 5px;
+    max-width: 30%;
+}

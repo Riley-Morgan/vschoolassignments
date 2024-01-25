@@ -9,7 +9,7 @@ function App() {
   function getMovies() {
     axios.get("/api/movies")
       .then(res => setMovies(res.data))
-      .catch(err => console.log(err))
+      .catch(err => console.log(err.response.data.errMsg))
   }
 
   function addMovie(newMovie) {
@@ -36,6 +36,12 @@ function App() {
       .catch(err => console.log(err))
   }
 
+  function handleFilter(e) {
+    axios.get(`/api/movies/search/genre?genre=${e.target.value}`)
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
+  }
+
   useEffect(() => {
     getMovies()
   }, [])
@@ -47,6 +53,15 @@ function App() {
           submit={addMovie}
           btnText="Add Movie"
         />
+
+        <h4>Filter by Genre</h4>
+        <select onChange={handleFilter} className="filter-form">
+          <option>- Select a Genre -</option>
+          <option value="action">Action</option>
+          <option value="horror">Horror</option>
+          <option value="musical">Musical</option>
+        </select>
+
         { 
           movies.map(movie => 
             <Movie 

@@ -103,3 +103,15 @@
 
   # Folder Structure
   # Proxy
+
+
+# Status Codes
+
+  # 200 - Successful Request
+  # 201 - Successful Insert / Successful Update
+  # 401 - Unauthorized
+  # 404 - Not found
+  # 500 - Server Error
+
+
+  # http://http.cat - has a list of all status codes
