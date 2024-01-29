@@ -47,6 +47,7 @@ function App() {
           submit={addBounty}
           btnText="Add Bounty"
         />
+      <div className="bounty-list">
         {
           bounties.map(bounty => 
             <Bounty
@@ -57,6 +58,7 @@ function App() {
             />
           )
         }
+      </div>
       </div>
     </div>
   )

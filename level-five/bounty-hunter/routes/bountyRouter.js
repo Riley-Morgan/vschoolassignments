@@ -1,80 +1,97 @@
 const express = require("express")
 const bountyRouter = express.Router()
-const {v4: uuidv4} = require("uuid")
+const Bounty = require("../models/bounty.js")
 
-const bounties = [
-    {firstname: "Darth",
-     lastname: "Maul", 
-     living: false, 
-     bounty: 10, 
-     type: "Sith",
-     _id: uuidv4()
-    },
-    {firstname: "Luke",
-     lastname: "Skywalker", 
-     living: true, 
-     bounty: 13, 
-     type: "Jedi", 
-     _id: uuidv4()
-    },
-    {firstname: "Count",
-     lastname: "Dooku", 
-     living: false, 
-     bounty: 16, 
-     type: "Sith", 
-     _id: uuidv4()
-    },
-    {firstname: "Sheev",
-     lastname: "Palpatine", 
-     living: true, 
-     bounty: 6, 
-     type: "Sith", 
-     _id: uuidv4()
-    },
-    {firstname: "Mace",
-     lastname: "Windu", 
-     living: false, 
-     bounty: 8, 
-     type: "Jedi", 
-     _id: uuidv4()
-    }
-]
 
-// Get All
-bountyRouter.get("/", (req, res) => {
-    res.send(bounties)
+// Get All //
+bountyRouter.get("/", (req, res, next) => {
+    Bounty.find((err, bounties) => {
+        if(err) {
+            res.status(500)
+            return next(err)
+        }
+        return res.status(200).send(bounties)
+    })
 })
 
-// Get One
-bountyRouter.get("/:bountyId", (req, res) => {
+bountyRouter.get('/async', async(req, res, next) => {
+    try {
+        const bounties = await Bounty.find()
+        return res.status(200).send(bounties)
+    } catch (err) {
+        res.status(500)
+        return next(err)
+    }
+})
+
+// Get One //
+bountyRouter.get("/:bountyId", (req, res, next) => {
     const bountyId = req.params.bountyId
     const foundBounty = bounties.find(bounty => bounty._id === bountyId)
-    res.send(foundBounty)
+    if(!foundBounty) {
+        const error = new Error(`The bounty of ${bountyId} could not be found`)
+        res.status(500)
+        return next(error)
+    }
+    return res.status(200).send(foundBounty)
 })
 
-// Post One
-bountyRouter.post("/", (req, res) => {
-    const newBounty = req.body
-    newBounty._id = uuidv4()
-    bounties.push(newBounty)
-    res.send(`Successfully added the bounty for ${newBounty.firstname} ${newBounty.lastname}.`)
+// Post One //
+bountyRouter.post("/", (req, res, next) => {
+    const newBounty = new Bounty(req.body)
+    newBounty.save((err, savedBounty) => {
+        if(err) {
+            res.status(500)
+            return next(err)
+        }
+        return res.status(201).send(savedBounty)
+    })
 })
 
-// Delete One
-bountyRouter.delete("/:bountyId", (req, res) => {
-    const bountyId = req.params.bountyId
-    const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyId)
-    bounties.splice(bountyIndex, 1)
-    res.send("Successfully deleted bounty.")
+bountyRouter.post('/async', async (req,res,next) => {
+    try {
+        const newBounty = new Bounty(req.body)
+        const savedBounty = await newBounty.save()   // FOR ASYNC MAKE VARIABLE FIRST, THEN RUN FUNCTION
+        return res.status(201).send(savedBounty)
+    } catch (err) {
+        res.status(500)
+        return next(err)
+    }
 })
 
-// Update One
-bountyRouter.put("/:bountyId", (req, res) => {
-    const bountyId = req.params.bountyId
-    const updateBounty = req.body
-    const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyId)
-    const updatedEntry = Object.assign(bounties[bountyIndex], updateBounty)
-    res.send(updatedEntry)
+// Delete One //
+bountyRouter.delete("/:bountyId", (req, res, next) => {
+    Bounty.findOneAndDelete({ _id: req.params.bountyId}, (err, deletedItem) => {
+        if(err) {
+            res.status(500)
+            return next(err)
+        }
+        return res.status(200).send(`Successfully deleted the bounty of: ${deletedItem.firstname} ${deletedItem.lastname}, from the database`)
+    })
 })
+
+// Update One //
+bountyRouter.put("/:bountyId", (req, res, next) => {
+    Bounty.findOneAndUpdate(
+        { _id: req.params.bountyId},
+        req.body,
+        {new: true},
+        (err, updatedBounty) => {
+            if(err) {
+                res.status(500)
+                return next(err)
+            }
+            return res.status(201).send(updatedBounty)
+        }
+    )
+})
+
+/* 
+C - CREATE (POST)
+R - READ (GET)
+U - UPDATE (PUT)
+D - DESTROY (DELETE)
+*/
 
 module.exports = bountyRouter
+

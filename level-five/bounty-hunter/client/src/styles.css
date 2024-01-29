@@ -3,7 +3,7 @@
     font-family: monospace;
     margin: 0;
     padding: 0;
-    color: #a69797;
+    color: #c4baba;
 }
 
 body {
@@ -19,7 +19,7 @@ h4 {
 }
 
 form {
-    border: 3px solid #050d9e;
+    border: 3px solid #b7b91c;
     padding: 20px;
     margin: 25px;
 }
@@ -27,7 +27,7 @@ form {
 input {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #a69797;
+    border: 1px solid #c4baba;
     border-radius: 8px;
     margin: 5px;
 }
@@ -36,18 +36,20 @@ button {
     padding: 10px;
     border-radius: 4px;
     font-size: 16px;
-    color: #050d9e;
+    color: #b7b91c;
+    background-color: #181717;
+    border: 1px solid #a69797;
 }
 
 .delete-btn {
     background-color: #333;
-    color: rgba(225, 6, 6, 0.568);
+    color: #b7b91c;
     margin: 10px;
 }
 
 .edit-btn {
     background-color: #333;
-    color: #050d9e;
+    color: #b7b91c;
     margin: 10px;
 }
 
@@ -57,9 +59,24 @@ button {
     margin: 0 32px;
 }
 
-.bounty {
-    border: 1px solid #a69797;
+.bounty--Jedi {
+    border: 2px solid #2a14ee;
     padding: 10px;
     margin: 5px;
-    max-width: 30%;
+}
+
+.bounty--Sith {
+    border: 2px solid #e02b2b;
+    padding: 10px;
+    margin: 5px;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.bounty-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

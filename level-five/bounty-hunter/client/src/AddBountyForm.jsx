@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function AddBountyForm(props) {
     const initInputs = {
         firstname: props.firstname || "",
         lastname: props.lastname || "",
-        living: props.living || "", 
+        alive: props.alive || '', 
         bounty: props.bounty || "", 
-        type: props.type || "",
+        alignment: props.alignment || "",
     }
     const [ inputs, setInputs ] = useState(initInputs)
 
@@ -21,8 +21,10 @@ function AddBountyForm(props) {
         setInputs(initInputs)
     }
 
+
+
     return (
-        <form>
+        <form className="add-form" onSubmit={handleSubmit}>
             <input
                 type="text"
                 name="firstname"
@@ -35,22 +37,24 @@ function AddBountyForm(props) {
                 value={inputs.lastname}
                 onChange={handleChange}
                 placeholder="Last Name" />
+            <div>
+                <h2>Status:</h2>
+                <select name="alive" value={inputs.alive} onChange={handleChange}>
+                    <option>---</option>
+                    <option value={true}>Alive</option>
+                    <option value={false}>Dead</option>
+                </select>
+            </div>
             <input
-                type="text"
-                name="living"
-                value={inputs.living}
-                onChange={handleChange}
-                placeholder="Status" />
-            <input
-                type="text"
+                type="number"
                 name="bounty"
                 value={inputs.bounty}
                 onChange={handleChange}
                 placeholder="Bounty" />
             <input
                 type="text"
-                name="type"
-                value={inputs.type}
+                name="alignment"
+                value={inputs.alignment}
                 onChange={handleChange}
                 placeholder="Alignment" />
             <button>{ props.btnText }</button>
