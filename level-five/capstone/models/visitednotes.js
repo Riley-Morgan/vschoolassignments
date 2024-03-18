@@ -3,8 +3,13 @@ const Schema = mongoose.Schema
 
 // Notes Blueprint //
 const notesSchema = new Schema({
-    review: {
+    note: {
         type: String,
+        required: true
+    },
+    countryof: {
+        type: Schema.Types.ObjectId,
+        ref: "Visited",
         required: true
     }
 })
