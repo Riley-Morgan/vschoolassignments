@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.app {
+    background-image: url("../kyle-glenn-SrASYZZpyjw-unsplash.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+    font-family: "Stick No Bills", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: .8px;
+}
+
+.in-app {
+    background: rgba(225, 225, 225, 0.5);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+
+
+/*NAVBAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.navbar {
+    background: #b6ad90;
+    height: 70px;
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+}
+
+a:link, a:visited {
+    color: #314528;
+    text-decoration: none;
+    position: relative;
+    top: -20px;
+}
+
+a:hover, a:active {
+    color: #314528;
+    background-color: #b3aa8d;
+}
+
+.navbar button {
+    color: #45573d;
+    border: none;
+    background-color: #b6ad90;
+    font-size: 16px;
+    padding: 5px;
+    font-family: "Stick No Bills", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: .8px;
+    float: right;
+    padding-top: 20px;
+    padding-right: 15px;
+
+}
+
+.navbar button:hover {
+    background-color: #b3aa8d;
+    cursor: pointer;
+}
+.navbar-img {
+    height: 60px;
+}
+
+/*AUTH~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.auth-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.auth-container > form {
+    border: 3px solid #582f0e;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.auth-container > form > input {
+    margin: 12px 7px;
+    padding: 9px;
+    border-radius: 4px;
+    border: none;
+    background-color: #dad8ce75;
+    color: #314528;
+    font-family: "Stick No Bills", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: .8px;
+}
+
+.auth-container > form > button {
+    margin: 12px 7px;
+    padding: 9px;
+    border-radius: 4px;
+    border: none;
+    background-color: #838179aa;
+    font-family: "Stick No Bills", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: .8px;
+}
+
+.auth-container p {
+    padding-top: 20px;
+}
+
+.auth-container p:hover {
+    cursor: pointer;
+    opacity: 80%;
+
+}
