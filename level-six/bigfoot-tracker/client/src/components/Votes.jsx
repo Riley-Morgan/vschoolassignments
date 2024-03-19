@@ -6,9 +6,9 @@ export default function Votes(props) {
     const { _id, likedUsers, dislikedUsers } = props
 
     return (
-        <>
+        <div className="votes">
             <button onClick={() => upVoteSighting(_id)}>{likedUsers.length} &#129093;</button>
             <button onClick={() => downVoteSighting(_id)}>{dislikedUsers.length} &#129095;</button>
-        </>
+        </div>
     )
 }

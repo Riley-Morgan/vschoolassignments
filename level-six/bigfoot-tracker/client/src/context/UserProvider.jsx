@@ -133,7 +133,7 @@ function UserProvider(props) {
                 })
             })
           })
-          .catch(err => console.log(err.response.data.errMgs))
+          .catch(err => console.log(err.response.data.errMsg))
     }
 
 //~~~~~~~~~ COMMENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//

@@ -14,10 +14,14 @@ export default function Profile() {
     return (
         <div className="profile-container">
             <h2>Welcome {username}!</h2>
-            <h4>Record a new sighting:</h4>
-            <SightingForm addSighting={addSighting}/>
-            <h4>Past sightings:</h4>
-            <Sightinglist sightings={sightings}/>
+            <div className="prof-left">
+                <h4>Record a new sighting:</h4>
+                <SightingForm addSighting={addSighting}/>
+            </div>
+            <div className="prof-right">
+                <h4>Past sightings:</h4>
+                <Sightinglist sightings={sightings}/>
+            </div>
         </div>
     )
 }

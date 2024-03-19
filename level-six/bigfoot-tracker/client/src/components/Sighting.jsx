@@ -28,8 +28,8 @@ export default function Sighting(props) {
             />
             {!editToggle ? 
                 <>
-                    <h2>{title}</h2>
-                    <h4>{text}</h4>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
                     <button onClick={() => setEditToggle(prevToggle => !prevToggle)}>Edit</button>
                     <button onClick={handleDeleteS}>Delete</button>
                 </>
@@ -43,8 +43,10 @@ export default function Sighting(props) {
                     />
                 </>
             }
+            <div className="comment-list">
+                {sightingComments}
+            </div>
             <CommentForm sightingId={_id}/>
-            {sightingComments}
         </div>
     )
 }

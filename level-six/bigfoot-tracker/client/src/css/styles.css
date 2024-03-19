@@ -60,6 +60,7 @@ a:link, a:visited {
     text-decoration: none;
     position: relative;
     top: -20px;
+    padding-left: 20px;
 }
 
 a:hover, a:active {
@@ -146,3 +147,157 @@ a:hover, a:active {
     opacity: 80%;
 
 }
+
+/*PROFILE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.profile-container {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.profile-container h2 {
+    font-size: 60px;
+    text-align: center;
+    padding: 20px;
+    align-self: center;
+}
+
+.prof-left {
+    align-self: center;
+    border: 3px solid #582f0e;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.prof-left h4 {
+    align-self: center;
+    padding-left: 20px;
+}
+
+.prof-right {
+    align-self: flex-start;
+    margin-top: 50px;
+}
+
+.prof-right h4 {
+    border-bottom: 3px solid #22271f;
+    max-width: fit-content;
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+.sighting-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.sighting-form > input {
+    margin: 12px 7px;
+    padding: 9px;
+    border-radius: 4px;
+    border: none;
+    background-color: #dad8ce75;
+    color: #314528;
+    font-family: "Stick No Bills", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: .8px;
+}
+
+.sighting-form > button {
+    margin: 12px 7px;
+    padding: 9px;
+    border-radius: 4px;
+    border: none;
+    background-color: #838179e1;
+    font-family: "Stick No Bills", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: .8px;
+}
+
+/*PUBLIC~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.sighting {
+    background-color: #b3aa8d72;
+    margin: 15px;
+    border: 5px solid #303e29;
+    max-width: 50%;
+    
+
+}
+
+.sighting h3 {
+    font-size: 38px;
+    padding-left: 7px;
+}
+
+.sighting p {
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+.sighting button {
+    margin: 5px 3px;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+    background-color: #5237378a;
+    font-family: "Stick No Bills", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .8px;
+}
+
+
+.votes button {
+    margin: 3px 2px;
+    padding: 3px;
+    border-radius: 4px;
+    border: none;
+    background-color: #767b88e1;
+    font-family: "Stick No Bills", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 14px;
+    width: 36px;
+}
+
+.comment {
+    padding-left: 10px;
+    border-top: 1px solid #45573d;
+}
+
+.comment-form {
+    border-top: 5px solid #303e29;
+}
+
+.comment-form > input {
+    margin: 12px 7px;
+    padding: 3px;
+    border-radius: 4px;
+    border: none;
+    background-color: #dad8ce75;
+    color: #314528;
+    font-family: "Stick No Bills", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: .8px;
+
+}
+
+.comment-list {
+    border-top: 5px solid #303e29;
+}
+/*
+@media (max-width: 600px)
+@media (max-width: 1000px)
+@media (max-width: 1200px)*/

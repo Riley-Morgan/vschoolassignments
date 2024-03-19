@@ -2,8 +2,8 @@
 export default function Comment(props) {
     const { text, _id } = props
     return (
-        <>
-            <p>{text}</p>
-        </>
+        <div className="comment">
+            <span>{text}</span>
+        </div>
     )
 }
